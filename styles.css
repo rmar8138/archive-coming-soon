@@ -16,11 +16,13 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
 }
@@ -28,29 +30,38 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Grotesk Regular', sans-serif;
-  color: rgba(39, 41, 99);
-  background-color: rgba(233, 233, 234);
+  color: rgba(39, 41, 99, 1);
+  background-color: rgba(233, 233, 234, 1);
   padding: 2rem;
   position: relative;
   height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a,
 a:visited,
 a:hover,
 a:active {
-  color: rgba(39, 41, 99);
+  color: rgba(39, 41, 99, 1);
   text-decoration: none;
   display: inline-block;
 }
 
 header {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -72,8 +83,10 @@ main {
   position: absolute;
   bottom: 4rem;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 85%;
+  width: 75%;
 }
 
 .social {
@@ -94,10 +107,12 @@ main {
   }
 
   main {
+    -webkit-transform: unset;
+    -ms-transform: unset;
     transform: unset;
     left: unset;
     right: 6rem;
-    width: 55%;
+    width: 45%;
   }
 }
 
