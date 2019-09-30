@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Orpheus Pro Regular';
+  src: url('./assets/fonts/OrpheusPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Grotesk Regular';
+  src: url('./assets/fonts/Grotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Grotesk Light';
+  src: url('./assets/fonts/Grotesk-Light.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* border: 1px solid orangered; */
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Grotesk Regular', sans-serif;
+  color: rgba(39, 41, 99);
+  background-color: rgba(233, 233, 234);
+  padding: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: rgba(39, 41, 99);
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Orpheus Pro Regular', serif;
+  font-weight: 300;
+  font-size: 6vw;
+  margin-right: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-weight: 700;
+  font-size: 10vw;
+}
+
+main {
+  position: absolute;
+  bottom: 6rem;
+}
