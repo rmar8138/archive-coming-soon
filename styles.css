@@ -63,7 +63,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
-span {
+.coming-soon {
   font-weight: 700;
   font-size: 10vw;
 }
@@ -76,6 +76,10 @@ main {
   width: 85%;
 }
 
+.social {
+  display: block;
+}
+
 @media screen and (min-width: 560px) {
   body {
     padding: 6rem;
@@ -85,7 +89,7 @@ main {
     font-size: 4vw;
   }
 
-  span {
+  .coming-soon {
     font-size: 8vw;
   }
 
@@ -93,7 +97,7 @@ main {
     transform: unset;
     left: unset;
     right: 6rem;
-    width: 50%;
+    width: 55%;
   }
 }
 
@@ -112,7 +116,7 @@ main {
     font-size: 4.8rem;
   }
 
-  span {
+  .coming-soon {
     font-size: 9.6rem;
   }
 
