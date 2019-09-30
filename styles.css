@@ -41,6 +41,7 @@ a:hover,
 a:active {
   color: rgba(39, 41, 99);
   text-decoration: none;
+  display: inline-block;
 }
 
 header {
@@ -72,7 +73,7 @@ main {
   bottom: 4rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 85%;
 }
 
 @media screen and (min-width: 560px) {
